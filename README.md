@@ -31,11 +31,11 @@ so that
     hepster can import them into their systems
 
 Acceptance criteria
-- The list is deliverd as attached.
+- The list is deliverd as attached (KingsBikeLeasingImportList.csv).
 - The partner's product names are mapped to hepster's product UUIDs.
 - The fields firstname, lastname, email, product are mandatory.
 - In case of an error, the CSV's row is in an errorfile with an
-  additional field describin the error
+  additional field describing the error
 ```
 
 
