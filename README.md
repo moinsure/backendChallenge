@@ -2,9 +2,10 @@
 Challenge for backend engineer candidates
 
 Hi! This is our little coding challenge. It is within one of our business domains but
-totally made up, of course.
+totally made up, of course. Also the API design is questionable but good enough for
+this little task.
 
-As we work within the scrum framework we have written some stories for you.
+As we work within the scrum framework we have written a story for you.
 
 ## Context
 Our partners sell insurance contracts. As we want to be as digital as possible,
@@ -19,6 +20,8 @@ for development purposes. Anyway the API provides the following endpoint for the
 
 ## User Stories
 This is the ordered list of stories. The most valuable story is on top.
+## User Story
+This is how a user story would look like.
 
 ```
 Read partner's list and create contracts in the API
