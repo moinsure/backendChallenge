@@ -16,10 +16,44 @@ and we need to transform these lists and interface to our API on the partner's b
 Because we are an insurance company, we cannot grant access to our production API
 for development purposes. Anyway the API provides the following endpoint for the task.
 
-**//insert made up API description here//**
+POST /contract\
+creates a contract. All fields are mandatory and must not be empty.
 
-## User Stories
-This is the ordered list of stories. The most valuable story is on top.
+Sample input:
+```
+{
+  "partnerId": "971a806f-36ce-4ca0-9c29-29f8f4396cff",
+  "productId": "7cfd7724-027b-4fad-b1f9-7f8c3e65a949",
+  "serialNo": "1234XD2234",
+  "customer": {
+    "firstName": "Jane",
+    "lastNamer": "Doe",
+    "email":"hillgrill@example.com"
+  }
+}
+```
+
+Returns:
+
+202 Accepted on success with following sample payload
+```
+{
+  "correlationID":"a7a39ac5-90b4-40fd-951c-79681f0f8af9"
+}
+```
+400 Bad Request if the server side validation fails
+```
+{
+  "errors": [
+    "firstname is empty",
+    "email malformed",
+    "partner not found"
+  ]
+}
+```
+
+
+
 ## User Story
 This is how a user story would look like.
 
@@ -39,6 +73,11 @@ Acceptance criteria
 - The fields firstname, lastname, email, product are mandatory.
 - In case of an error, the CSV's row is in an errorfile with an
   additional field describing the error
+  
+Additional Remarks
+- The UUID of King's Bike Leasing is 4441769d-4ddd-4e75-8d31-d8cb259a6261
+- For the mapping of the partner's product names to our product UUIDs see
+  Products.json. This mapping remains constant.
 ```
 
 

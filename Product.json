@@ -1,0 +1,18 @@
+[
+  {
+    "salesName": "Bike",
+    "productId": "35657d5c-cdb0-4673-92ef-e477588e231c"
+  },
+  {
+    "salesName": "BikePlus",
+    "productId": "95209bbd-f85f-4906-9271-9600640e68cb"
+  },
+  {
+    "salesName": "E-Bike",
+    "productId": "8d6dfdcd-7f37-49a0-9652-916cc7348eca"
+  },
+  {
+    "salesName": "E-BikePlus",
+    "productId": "f214a72d-12e6-4925-8449-fb7accebaefd"
+  }
+]
